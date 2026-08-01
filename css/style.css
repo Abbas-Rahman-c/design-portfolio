@@ -124,7 +124,8 @@ a { color: inherit; text-decoration: none; }
 .hero-invert .hw-image-box { border-color: #faf8f4; }
 .hw-image-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-.hw-text-col { flex: 1; padding-top: 4px; }
+/* Keeps the same line-wrap as before, just pushed to the right of the row. */
+.hw-text-col { flex: 0 1 480px; max-width: 480px; margin-left: auto; padding-top: 4px; }
 .hw-lead { font-size: clamp(14px, 1.7vw, 17px); color: var(--text-dim); margin-bottom: 8px; }
 .hw-para {
   font-family: var(--sans);
