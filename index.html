@@ -8,25 +8,29 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23faf8f4'/%3E%3Ctext x='50' y='68' font-size='50' font-family='Georgia' font-weight='700' fill='%2315110d' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500;1,9..144,600&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&amp;family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500;1,9..144,600&amp;family=Jost:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="hero-body">
+
+<div class="intro-overlay" id="intro-overlay">
+  <h1 class="intro-script" id="intro-script">Creative Designer</h1>
+</div>
 
 <div class="hero-stack" id="hero-stack">
 
   <section class="hero-white" id="hero-base">
     <nav class="hw-nav reveal">
-      <a href="links.html" class="hw-view-btn" data-hover>View Portfolio</a>
+      <a href="assets/Ayesha-Kanwal-Portfolio.pdf" target="_blank" rel="noopener noreferrer" class="hw-view-btn" data-hover>View Portfolio</a>
     </nav>
 
     <div class="hw-intro">
       <div class="hw-image-box">
-        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/43fdaf247478975.69dc553b03c41.jpg" alt="Branding and packaging design by Ayesha Kanwal">
+        <img src="assets/ayesha-portrait.jpg" alt="Ayesha Kanwal">
       </div>
       <div class="hw-text-col">
-        <p class="hw-lead" id="hw-lead">I am a</p>
-        <p class="hw-para" id="hw-para">Graphic &amp; UI/UX designer with a focus on Brand Identity, Packaging &amp; Digital Design. I have a passion for clean, considered design and clear visual craft.</p>
+        <p class="hw-script" id="script-target">Creative Designer</p>
+        <p class="hw-bio" id="hw-bio">Creating brands and campaign visuals for 4 years. Always curious, always collecting inspiration, and always looking for new ways to make ideas feel fresh and memorable.</p>
       </div>
     </div>
 
@@ -34,15 +38,17 @@
   </section>
 
   <div class="hero-invert" id="hero-invert" aria-hidden="true">
-    <nav class="hw-nav"></nav>
+    <nav class="hw-nav">
+      <span class="hw-view-btn" style="visibility:hidden">View Portfolio</span>
+    </nav>
 
     <div class="hw-intro">
       <div class="hw-image-box">
-        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/43fdaf247478975.69dc553b03c41.jpg" alt="">
+        <img src="assets/ayesha-portrait.jpg" alt="">
       </div>
       <div class="hw-text-col">
-        <p class="hw-lead">I am a</p>
-        <p class="hw-para">Graphic &amp; UI/UX designer with a focus on Brand Identity, Packaging &amp; Digital Design. I have a passion for clean, considered design and clear visual craft.</p>
+        <p class="hw-script">Creative Designer</p>
+        <p class="hw-bio">Creating brands and campaign visuals for 4 years. Always curious, always collecting inspiration, and always looking for new ways to make ideas feel fresh and memorable.</p>
       </div>
     </div>
 
@@ -56,9 +62,8 @@
 </svg>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://unpkg.com/split-type"></script>
 <script src="js/script.js"></script>
-<script src="js/hero-anim.js"></script>
+<script src="js/intro-reveal-home.js"></script>
 <script src="js/hero-blob.js"></script>
 </body>
 </html>
