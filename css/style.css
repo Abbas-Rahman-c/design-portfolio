@@ -134,6 +134,7 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 10px;
 }
 #script-target { opacity: 0; transition: opacity .3s ease; }
+#hw-bio { opacity: 0; transition: opacity .5s ease; }
 .hw-bio {
   font-family: var(--serif);
   font-style: italic;

@@ -1,0 +1,11 @@
+{
+  "headers": [
+    {
+      "source": "/assets/Ayesha-Kanwal-Portfolio.pdf",
+      "headers": [
+        { "key": "Content-Type", "value": "application/pdf" },
+        { "key": "Content-Disposition", "value": "inline; filename=\"Ayesha-Kanwal-Portfolio.pdf\"" }
+      ]
+    }
+  ]
+}

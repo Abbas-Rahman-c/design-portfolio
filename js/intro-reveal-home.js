@@ -22,7 +22,10 @@
     const scale = endFont / startFont;
 
     // Reparent to <body> as position:fixed so it can glide freely above
-    // the page while the white overlay behind it fades away.
+    // the page while the white overlay behind it fades away. Force a
+    // single line throughout the glide (no width constraint) so it never
+    // mid-flight-wraps into two lines and collides with the bio text —
+    // the target is allowed to wrap once we swap to it at the very end.
     document.body.appendChild(heading);
     gsap.set(heading, {
       position: "fixed",
@@ -30,6 +33,8 @@
       top: startRect.top,
       margin: 0,
       zIndex: 501,
+      width: "auto",
+      whiteSpace: "nowrap",
       transformOrigin: "top left"
     });
 
@@ -51,6 +56,8 @@
         heading.style.visibility = "hidden";
         target.style.opacity = "1";
         document.body.style.overflow = "";
+        const bio = document.getElementById("hw-bio");
+        if (bio) bio.style.opacity = "1";
       }
     });
   }
